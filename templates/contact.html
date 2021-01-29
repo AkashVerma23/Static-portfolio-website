@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<head>
+
+
+  <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static',filename= 'vendor/fontawesome-free/css/all.min.css')}}"rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static',filename= 'css/clean-blog.min.css')}}" rel="stylesheet">
+  <style>
+  h3 {
+    text-align: center;
+  }
+  h5 {
+    text-align: center;
+  }
+ </style>
+</head>
+<body>
+
+<h3 class="fw-light">Akash K. Verma</h3>
+<h5 class ="lead text-muted">Contact Info:</h5>
+</body>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/Akash_AFC">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href=#>
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/AkashVerma23">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href=#>
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fas fa-envelope-square fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="d-flex justify-content-center mynav myfoot">Copyright &copy; 2021 | Akash K. Verma | all rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ url_for('static',filename= 'vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{ url_for('static',filename= 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{{ url_for('static',filename= 'js/clean-blog.min.js')}}"></script>
+
+</body>
+
+</html>
+{% endblock %}
